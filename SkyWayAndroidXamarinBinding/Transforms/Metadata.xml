@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<remove-node path="/api/package[@name='org.msgpack.value']" />
+	<remove-node path="/api/package[@name='org.msgpack.value.impl']" />
+	<remove-node path="/api/package[@name='com.google.gson.internal.bind']"/>
+	<remove-node path="/api/package[@name='com.google.gson.internal']" />
+	<remove-node path="/api/package[@name='com.google.gson']" />
+	<remove-node path="/api/package[@name='org.webrtc']" />
+	<remove-node path="/api/package[@name='com.koushikdutta.async']"/>
+	<remove-node path="/api/package[@name='com.koushikdutta.async.util']" />
+	<remove-node path="/api/package[@name='com.koushikdutta.async.future']"/>
+	<remove-node path="/api/package[@name='com.koushikdutta.async.http.spdy']"/>
+
+	<attr path="/api/package[@name='io.skyway.Peer']/class[@name='DataConnectionImpl']" name="visibility">public</attr>
+	<attr path="/api/package[@name='io.skyway.Peer']/class[@name='BaseConnection']" name="visibility">public</attr>
+	<attr path="/api/package[@name='io.skyway.Peer']/class[@name='MediaConnectionImpl']" name="visibility">public</attr>
+	<attr path="/api/package[@name='io.skyway.Peer']/class[@name='PeerImpl']" name="visibility">public</attr>
+</metadata>
