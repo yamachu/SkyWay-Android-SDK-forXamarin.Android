@@ -25,6 +25,14 @@ peer.On(Peer.PeerEventEnum.Open, new OnCallbackDelegate(obj =>
     System.Diagnostics.Debug.WriteLine(obj);
   }
 }));
+
+// or use extension method, 
+peer.OnOpen(obj => {
+  if (obj is Java.Lang.String)
+  {
+    System.Diagnostics.Debug.WriteLine(obj);
+  }
+});
 ```
 
 Libraryディレクトリにビルド済みの物が同梱されているので，ビルドが面倒な方はこちらを利用すると便利です．
